@@ -1,6 +1,5 @@
-# Shell Sort Benchmark & Performance Analysis — Assignment 2
+# Shell Sort Benchmark — Assignment 2
 
-**Course:** Design and Analysis of Algorithms  
 **Student:** Kausar Tukezhan  
 **Group:** SE-2422
 
@@ -143,15 +142,33 @@ and visual plots confirm the gap sequence directly impacts sort efficiency.
 - Sedgewick sequence combines theoretical efficiency and practical speed, showing the best results overall.
 
 
+---
 
+## Git Workflow
 
-📑 Reports
+This project follows a structured **branching strategy** for clarity and maintainability:
 
-	•	Individual Report: docs/analysis-report.pdf
-	•	Pair Comparison Summary: docs/comparison-summary.md
-	•	Benchmark Data: docs/performance-plots/shellsort_results.csv
+| Branch | Purpose |
+|---------|----------|
+| **main** | Stable release (tag: `v1.0`) |
+| **feature/algorithm** | ShellSort implementation + gap sequences (Shell, Knuth, Sedgewick) |
+| **feature/metrics** | PerformanceTracker for comparisons, swaps, and array accesses |
+| **feature/cli** | BenchmarkRunner and ArrayGenerator for CSV output |
+| **feature/testing** | JUnit tests for multiple input patterns |
+| **feature/optimization** | Benchmark result plots and optimization experiments |
 
-⸻
+All branches have been merged into `main` for the final release.
+
+---
+
+## Release Information
+
+- **Version:** `v1.0`
+- **Status:** Stable
+- **Tag:** [v1.0](https://github.com/KausarTukezhan/assignment2-shellsort/releases/tag/v1.0)
+
+---
+
 
 📘 References
 

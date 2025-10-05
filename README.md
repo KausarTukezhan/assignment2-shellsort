@@ -36,11 +36,11 @@ The implementation includes:
 
 
 ## Technologies
-| Component | Tool |
-|------------|------|
-| Language | Java 17 |
-| Build Tool | Maven 3.9 |
-| Testing | JUnit 5 |
+| Component     | Tool                |
+|---------------|---------------------|
+| Language      | Java 17             |
+| Build Tool    | Maven 3.9           |
+| Testing       | JUnit 5             |
 | Visualization | Matplotlib (Python) |
 
 ---
@@ -130,11 +130,11 @@ and visual plots confirm the gap sequence directly impacts sort efficiency.
 
 ##  Algorithm Summary
 
-| Gap Sequence | Formula / Generation Rule              | Typical Performance & Notes                     |
-|---------------|----------------------------------------|--------------------------------------------------|
-| Shell     | n/2, n/4, …, 1                         | Baseline (original algorithm); simple but slower on large inputs |
-| Knuth     | 1, 4, 13, 40, … (3h + 1)               | Balanced and practical; good average performance |
-| Sedgewick | 1, 5, 19, 41, 109, …                   | Best empirical results; performs well across all data patterns |
+| Gap Sequence | Formula / Generation Rule | Typical Performance & Notes                                      |
+|--------------|---------------------------|------------------------------------------------------------------|
+| Shell        | n/2, n/4, …, 1            | Baseline (original algorithm); simple but slower on large inputs |
+| Knuth        | 1, 4, 13, 40, … (3h + 1)  | Balanced and practical; good average performance                 |
+| Sedgewick    | 1, 5, 19, 41, 109, …      | Best empirical results; performs well across all data patterns   |
 
 
 - Shell sequence introduced the idea of diminishing gaps but is less optimal for large datasets.
@@ -148,14 +148,14 @@ and visual plots confirm the gap sequence directly impacts sort efficiency.
 
 This project follows a structured **branching strategy** for clarity and maintainability:
 
-| Branch | Purpose |
-|---------|----------|
-| **main** | Stable release (tag: `v1.0`) |
-| **feature/algorithm** | ShellSort implementation + gap sequences (Shell, Knuth, Sedgewick) |
-| **feature/metrics** | PerformanceTracker for comparisons, swaps, and array accesses |
-| **feature/cli** | BenchmarkRunner and ArrayGenerator for CSV output |
-| **feature/testing** | JUnit tests for multiple input patterns |
-| **feature/optimization** | Benchmark result plots and optimization experiments |
+| Branch                   | Purpose                                                            |
+|--------------------------|--------------------------------------------------------------------|
+| **main**                 | Stable release (tag: `v1.0`)                                       |
+| **feature/algorithm**    | ShellSort implementation + gap sequences (Shell, Knuth, Sedgewick) |
+| **feature/metrics**      | PerformanceTracker for comparisons, swaps, and array accesses      |
+| **feature/cli**          | BenchmarkRunner and ArrayGenerator for CSV output                  |
+| **feature/testing**      | JUnit tests for multiple input patterns                            |
+| **feature/optimization** | Benchmark result plots and optimization experiments                |
 
 All branches have been merged into `main` for the final release.
 
@@ -169,6 +169,19 @@ All branches have been merged into `main` for the final release.
 
 ---
 
+---
+
+## Submission Summary
+
+All required deliverables for **Assignment 2 — Design and Analysis of Algorithms** have been completed and included below:
+
+| Document                 | Description | Link |
+|--------------------------|--------------|------|
+| ☻ **Benchmark Notes**    | Experimental setup, device info, and benchmarking methodology (Colab execution) | [docs/benchmark-notes.md](docs/benchmark-notes.md) |
+| ☻ **Analysis Report**    | Peer analysis and performance evaluation of partner’s HeapSort implementation (PDF) | [docs/analysis-report.pdf](docs/analysis-report.pdf) |
+| ☻ **Comparison Summary** | Final comparative study between ShellSort (Sedgewick gaps) and HeapSort | [docs/comparison-summary.md](docs/comparison-summary.md) |
+
+---
 
 📘 References
 
